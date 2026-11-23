@@ -1,0 +1,18 @@
+# NAME: ValuableCapital
+# DESC: 华盛通 / 华盛证券 / Valuable Capital 代理分流规则（仅第一方域名）
+# TARGET: Shadowrocket
+# UPDATED: 2026-11-24
+# DOMAIN-SUFFIX: 10
+# DOMAIN-KEYWORD: 0
+# TOTAL: 10
+
+DOMAIN-SUFFIX,hstbroker.com
+DOMAIN-SUFFIX,hstong.com
+DOMAIN-SUFFIX,hstong.com.cn
+DOMAIN-SUFFIX,valuable.com.hk
+DOMAIN-SUFFIX,vbkr.com
+DOMAIN-SUFFIX,vbkrhk.com
+DOMAIN-SUFFIX,vcglg.com
+DOMAIN-SUFFIX,vclbroker.com
+DOMAIN-SUFFIX,vclbrokers.com
+DOMAIN-SUFFIX,vcltrade.com
