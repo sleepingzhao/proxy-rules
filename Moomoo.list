@@ -3,10 +3,10 @@
 # TARGET: Shadowrocket
 # UPDATED: 2026-11-24
 # DOMAIN-SUFFIX: 29
-# DOMAIN: 0
 # DOMAIN-KEYWORD: 0
-# IP-CIDR: 0
-# TOTAL: 29
+# IP-CIDR: 2
+# IP-ASN: 1
+# TOTAL: 32
 
 DOMAIN-SUFFIX,futu.cn
 DOMAIN-SUFFIX,futu.link
@@ -37,3 +37,7 @@ DOMAIN-SUFFIX,moomoobull.com
 DOMAIN-SUFFIX,moomoocn.com
 DOMAIN-SUFFIX,moomooequity.com
 DOMAIN-SUFFIX,moomootrustee.com
+
+IP-CIDR,119.91.245.125/32,no-resolve
+IP-CIDR,119.91.245.213/32,no-resolve
+IP-ASN,132203,no-resolve
