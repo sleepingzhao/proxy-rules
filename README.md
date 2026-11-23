@@ -6,7 +6,7 @@
 
 | 文件 | 对应 App | 条数 |
 | --- | --- | --- |
-| [`Moomoo.list`](Moomoo.list) | 富途牛牛 / Moomoo | 32 |
+| [`Moomoo.list`](Moomoo.list) | 富途牛牛 / Moomoo | 30 |
 | [`ValuableCapital.list`](ValuableCapital.list) | 华盛通 / 华盛证券 / VBrokers | 10 |
 
 ## 使用

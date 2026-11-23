@@ -5,8 +5,8 @@
 # DOMAIN-SUFFIX: 29
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 0
-# IP-CIDR: 2
-# TOTAL: 32
+# IP-CIDR: 0
+# TOTAL: 30
 
 DOMAIN-SUFFIX,futu.cn
 DOMAIN-SUFFIX,futu.link
@@ -40,7 +40,3 @@ DOMAIN-SUFFIX,moomootrustee.com
 
 # 评论区走腾讯云 IM 的新加坡接入点，精确到主机名，避免影响其他使用腾讯云 IM 的 App
 DOMAIN,shortsgp.im.qcloud.com
-
-# 行情长连接按 IP 直连（9595 端口，无 SNI）；这两台核验为 futunn.com 自有服务器
-IP-CIDR,119.91.245.125/32,no-resolve
-IP-CIDR,119.91.245.213/32,no-resolve
