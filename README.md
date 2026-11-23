@@ -27,6 +27,10 @@ RULE-SET,https://cdn.jsdelivr.net/gh/sleepingzhao/proxy-rules@main/ValuableCapit
 
 规则用 `DOMAIN-SUFFIX` 显式匹配，不使用 `DOMAIN-KEYWORD`，避免误伤。添加后首次连接可能需要杀掉 App 重开以刷新 DNS。
 
+**规则顺序很重要**：`RULE-SET` 必须放在 `GEOIP,CN`、`GEOIP,CN,DIRECT` 一类按国家/地区直连的规则之前。富途大量域名解析到腾讯云内地节点（如 `119.91.245.x`），如果 `GEOIP,CN` 在前，会先命中直连，域名规则根本轮不到生效。
+
+Moomoo 额外带两条 `IP-CIDR`：行情/推送长连接使用裸 TCP 9595 端口、没有 SNI，域名规则无法匹配，只能用 IP 精确兜底。这两个 IP 已核验为富途自有服务器（证书 `*.futunn.com`，深圳市富途网络科技有限公司）。如果 App 仍提示内地，把 `设置 → 隐私与安全性 → 网络活动` 里流量最高的其他 IP 发出来，同样核验后补进去。
+
 ## 收录与排除
 
 - Moomoo：基础集来自 [proxyBug/tigertrade-moomoo-rules](https://github.com/proxyBug/tigertrade-moomoo-rules) 的 24 条核验域名，另补 `futuhainan.com`、`futuie.com`、`futuhongkong.com`、`moomooapp.com`、`moomoocn.com`（逐一核对过 TLS 证书主体为富途/Moomoo 实体）。

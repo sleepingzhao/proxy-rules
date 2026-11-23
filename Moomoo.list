@@ -4,7 +4,8 @@
 # UPDATED: 2026-11-24
 # DOMAIN-SUFFIX: 29
 # DOMAIN-KEYWORD: 0
-# TOTAL: 29
+# IP-CIDR: 2
+# TOTAL: 31
 
 DOMAIN-SUFFIX,futu.cn
 DOMAIN-SUFFIX,futu.link
@@ -35,3 +36,8 @@ DOMAIN-SUFFIX,moomoobull.com
 DOMAIN-SUFFIX,moomoocn.com
 DOMAIN-SUFFIX,moomooequity.com
 DOMAIN-SUFFIX,moomootrustee.com
+
+# 行情/推送长连接走裸 TCP（9595 端口，无 SNI），域名规则匹配不到
+# 证书与 Port 9595 均已核验为 futunn.com（深圳市富途网络科技有限公司）
+IP-CIDR,119.91.245.125/32,no-resolve
+IP-CIDR,119.91.245.213/32,no-resolve
