@@ -4,8 +4,8 @@
 # UPDATED: 2026-11-24
 # DOMAIN-SUFFIX: 29
 # DOMAIN-KEYWORD: 0
-# IP-CIDR: 2
-# TOTAL: 31
+# IP-CIDR: 23
+# TOTAL: 52
 
 DOMAIN-SUFFIX,futu.cn
 DOMAIN-SUFFIX,futu.link
@@ -37,7 +37,28 @@ DOMAIN-SUFFIX,moomoocn.com
 DOMAIN-SUFFIX,moomooequity.com
 DOMAIN-SUFFIX,moomootrustee.com
 
-# 行情/推送长连接走裸 TCP（9595 端口，无 SNI），域名规则匹配不到
-# 证书与 Port 9595 均已核验为 futunn.com（深圳市富途网络科技有限公司）
-IP-CIDR,119.91.245.125/32,no-resolve
-IP-CIDR,119.91.245.213/32,no-resolve
+# 行情/推送长连接按 IP 直连（9595 等非标准端口，无 SNI），域名规则匹配不到
+# 以下网段来自 Moomoo 实际连接 IP，并与社区券商规则集交叉核验
+IP-CIDR,42.193.128.0/24,no-resolve
+IP-CIDR,42.194.152.0/24,no-resolve
+IP-CIDR,43.128.254.50/32,no-resolve
+IP-CIDR,43.132.107.0/24,no-resolve
+IP-CIDR,43.132.138.6/32,no-resolve
+IP-CIDR,43.132.138.67/32,no-resolve
+IP-CIDR,43.153.191.0/24,no-resolve
+IP-CIDR,43.153.233.0/24,no-resolve
+IP-CIDR,43.153.249.33/32,no-resolve
+IP-CIDR,43.163.16.28/32,no-resolve
+IP-CIDR,43.163.17.223/32,no-resolve
+IP-CIDR,43.163.17.229/32,no-resolve
+IP-CIDR,43.163.63.148/32,no-resolve
+IP-CIDR,101.32.198.0/24,no-resolve
+IP-CIDR,101.33.192.19/32,no-resolve
+IP-CIDR,119.91.244.0/23,no-resolve
+IP-CIDR,124.156.233.0/24,no-resolve
+IP-CIDR,124.156.234.0/24,no-resolve
+IP-CIDR,129.226.111.0/24,no-resolve
+IP-CIDR,170.106.47.242/32,no-resolve
+IP-CIDR,170.106.48.0/23,no-resolve
+IP-CIDR,170.106.62.0/24,no-resolve
+IP-CIDR,170.106.201.0/24,no-resolve
