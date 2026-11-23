@@ -1,5 +1,5 @@
 # NAME: Moomoo
-# DESC: 富途证券 / Moomoo 代理分流规则（仅第一方域名，不含第三方 SDK）
+# DESC: 富途证券 / Moomoo 代理分流规则（第一方域名，腾讯云 IM 仅精确放行评论接口）
 # TARGET: Shadowrocket
 # UPDATED: 2026-11-24
 # DOMAIN-SUFFIX: 29
